@@ -1,30 +1,123 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    overflow-x: hidden;
 }
 
 header {
-    background-color: white;
+    /* background-color: white; */
     padding: 10px;
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 header img {
-    height: 80px;
-    width: auto;
-    border-radius: 13px;
-    padding-right: 20px;
+    height: 70px;
+    margin-bottom: 150px;
+    width: 70px;
+    border-radius: 23px;
+    margin-bottom: -20px;
+    /* padding-right: 20px; */
 }
 
 header h1 {
     font-family: 'Brush Script MT', cursive;
+    font-family: 'elegent', serif;
+    color: #8e830f;
     margin: 0;
+    font-size: 30px;
 }
+
+.gold-line {
+    border: none;
+    height: 5px; /* Adjust thickness of the line */
+    background-color: #8e830f; 
+    margin-top: -15px;
+    margin-bottom: 25px;
+    width: 85%;
+    margin-left: 150px;
+}
+
+/* start */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    /* background-color: #8e830f; */
+}
+
+.hero img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 0px;
+    border-radius: 13px;
+}
+
+
+.hero h1 span {
+    display: block; /* Stack text on smaller screens */
+    font-weight: bold;
+    font-size: 1.2rem; 
+    font-weight: 700; 
+}
+
+.animated-button {
+    font-family: 'Poppins', sans-serif; 
+    padding: 10px 20px;
+    background-color: #8f851cc4;
+    color: white;
+    text-decoration: none;
+    border-radius: 305px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    font-size: 1rem; /* Adjusted font size */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: auto; 
+    min-width: 150px; 
+    text-align: center;
+}
+
+.animated-button:hover {
+    background-color: #be8f217c;
+    transform: translate(-50%, -50%) scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* Medium screens (Tablets, small desktops) */
+@media (min-width: 768px) {
+    .hero {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .animated-button {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+}
+
+
+
+/* End */
 
 .home-div {
     display: flex;
@@ -43,19 +136,41 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     color: #0a0a0a;
-    font-weight: bold;
+    font-weight: 100;
+    position: relative; /* Make sure the pseudo-element is positioned relative to the link */
 }
 
 nav a:hover {
-    color: #8e830f;
-    border-radius: 5px;
-    text-decoration: underline;
+    color: #8e830f; /* Set text color on hover */
 }
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust thickness of the underline */
+    background-color: #8e830f; /* Set the color of the underline */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    bottom: -5px;
+
+}
+
 
 .hero {
     position: relative;
     text-align: center;
-    color: white;
+    color: rgb(247, 246, 242);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    font-family: 'Lato', serif; 
 }
 
 .hero img {
@@ -64,16 +179,17 @@ nav a:hover {
     object-fit: cover;
 }
 
-.hero h2 {
+.hero h1 {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
     font-weight: normal;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* padding: 10px; */
     border-radius: 5px;
+    font-weight: 700; 
 }
 
 #overview {
