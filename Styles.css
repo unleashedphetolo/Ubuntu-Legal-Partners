@@ -1,0 +1,327 @@
+:root {
+    --background-light: #d3cdcd;
+    --text-light: #000000;
+   
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f0e7dc; /* Light cream background */
+    color: rgb(19, 18, 18); /* Dark text */
+    position: fixed;
+    width: 100%; /* Full width */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Thin border for clean separation */
+}
+
+.navbar .logo a {
+    font-size: 1.8em;
+    color: #333; /* Slightly darker text for contrast */
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Increased gap for better spacing */
+    margin: 0;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #444; /* Softer color for links */
+    font-size: 1em;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+    border-radius: 5px; /* Smooth rounded corners on hover */
+}
+
+.navbar .nav-links a:hover {
+    background-color: #ddd; /* Light background on hover */
+    color: #000; /* Darker text on hover */
+}
+
+/* Responsive Hamburger Menu */
+.hamburger {
+    display: none; /* Hide by default */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide navigation links on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Below the navbar */
+        right: 0;
+        background-color: #f0e7dc;
+        width: 100%;
+        padding: 10px 0px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when hamburger is clicked */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger icon */
+    }
+}
+
+
+.navbar .nav-links a:hover {
+    background-color: #cec6c6;
+    color: #070606;
+    border-radius: 4px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 750px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background-color: #d6c3c3;
+        border-radius: 8px;
+        padding: 6px;
+        width: 200px;
+    }
+
+    .nav-links.active {
+        display: outside;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* About us Picture*/
+.circle-image {
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Match width for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle */
+    border: 5px solid #ccc; /* Optional: Add a border */
+    top: -15px;
+    right: 270px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+    
+}
+
+
+
+body.light-theme {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+
+body.dark-theme {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+
+/* About Us Section */
+.about-us {
+    padding: 20px 20px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+.about-us h3{
+
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+.about-us p {
+    font-size: x-large;
+     color: #555;
+     line-height: 1.6;
+     margin-bottom: 20px;
+ }
+
+.team {
+    padding: 5px 20px;
+    background-color: transparent;
+    text-align: left;
+    position: relative;
+}
+
+.team h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    float: right;
+    
+
+}
+.team-member{
+    padding: 5px 20px;
+    background-color: transparent;
+    text-align: left;
+    position: relative;
+}
+
+.team-member h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    float: right;
+}
+.team-member img{
+    border-radius: 5%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle */
+    border: 5px solid #ccc; /* Optional: Add a border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+
+}
+.team p{
+    font-size: medium;
+    float: inline-end;
+    
+
+}
+.details{
+    display: flex;
+    align-items: center;
+        justify-self: center;}
+.details p {
+    font-size: medium;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-style: normal;
+    float:left;
+     
+}
+/* Blog Section */
+.blog {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-post img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.blog-post h3 {
+    font-size: 1.4em;
+    color: #222;
+    margin: 10px 0;
+}
+
+.blog-post .author {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.blog-post .summary {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.blog-post .read-more {
+    font-size: 1em;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.blog-post .read-more:hover {
+    text-decoration: underline;
+}
+
