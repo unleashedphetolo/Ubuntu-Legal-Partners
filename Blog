@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Firm Template</title>
+
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 24px;
+        }
+        header nav a {
+            margin: 0 15px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .cta {
+            background-color: #b89076;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            padding: 50px 10%;
+            background-color: #f4f4f4;
+            align-items: center;
+        }
+        .hero-text {
+            flex: 1;
+        }
+        .hero img {
+            flex: 1;
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .hero h2 {
+            font-size: 36px;
+            color: #000;
+        }
+        .hero button {
+            margin-top: 20px;
+            background-color: #958d96;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* .latest */
+        .latest {
+            padding: 50px 10%;
+            background-color: #fff;
+            text-align: center;
+        }
+        .practice-areas h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .latest .area {
+            display: inline-block;
+            width: 22%;
+            margin: 0 1%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .latest .area img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .latest .area h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .latest .area p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Attorney Section */
+        .attorney-section {
+            padding: 50px 10%;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+        }
+        .attorney-section img {
+            flex: 1;
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .attorney-section .content {
+            flex: 2;
+            padding-left: 30px;
+        }
+        .attorney-section h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .attorney-section p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            padding: 50px 10%;
+            background-color: #000;
+            color: white;
+            text-align: center;
+        }
+        .reviews h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .reviews p {
+            font-style: italic;
+        }
+        main {
+            padding: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* Footer */
+        footer {
+            padding: 20px 10%;
+            background-color: #222;
+            color: white;
+            text-align: center;
+        }
+        footer a {
+            color: #ccc2c7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Ubuntu Legal Practise</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#" class="cta">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">Features</a>
+            <a href="#">More</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>What Ubuntu Means in the Legal Context</h2>
+            <p> Explore how the Ubuntu philosophy shapes our approach to justice, fairness, and community-driven legal representation.</p>
+            <button>Call Us Today</button>
+        </div>
+        <img src="Images Blog/ubuntu.jfif" alt="Attorney Angela Lumzy-Jones"width="200px"; height="250px">
+    </section>
+
+    <!-- Latest News -->
+    <section class="latest">
+        <h3>Our Latest</h3>
+        <div class="area">
+            <img src="Images Blog/blog 4.webp" alt="Car Accident"width="250px"; height="200px">
+            <h4>Navigating Family Disputes with Ubuntu Values</h4>
+            <p>
+                Insights on resolving family conflicts with compassion, respect, and understanding.</p>
+        </div>
+        <div class="area">
+            <img src="Images Blog/blog 3.jpg" alt="Truck Accident"width="250px"; height="200px">
+            <h4>Civil Rights and Ubuntu: A Shared Mission</h4>
+            <p>Discussing the intersection of Ubuntu philosophy and civil rights advocacy in the modern legal landscape.</p>
+        </div>
+        <div class="area">
+            <img src="Images Blog/blog 6.jpg" alt="Company Vehicle"width="250px"; height="200px">
+            <h4>Restoring Dignity Through Legal Advocacy</h4>
+            <p>Stories of how Ubuntu Legal Practice has helped clients regain their dignity and achieve justice.</p>
+        </div>
+        <div class="area">
+            <img src="Images Blog/blog 7.jpg" alt="Slip and Fall" width="250px"; height="200px">
+            <h4>The Importance of Community in Personal Injury Cases</h4>
+            <p>Highlighting how community and interconnectedness play a crucial role in achieving equitable outcomes for clients.</p>
+        </div>
+    </section>
+
+    <!-- Attorney Section -->
+    <section class="attorney-section">
+        <img src="Images About Us/medium-shot-woman-working-as-lawyer_23-2151202449.avif" alt="Award Winning Attorney"width="60px"; height="200px">
+        <div class="content">
+            <h3>Award Winning Attorney</h3>
+            <p>Thandeka Mokoena is the visionary behind Ubuntu Legal Partners. With an illustrious career spanning 18 years, Thandeka has become a trusted authority in family and human rights law. After earning her LLB from the University of Cape Town, she dedicated her early career to advocating for vulnerable communities, focusing on gender equality and children's rights.
+                Her commitment to justice was cemented when she led groundbreaking cases addressing domestic abuse and child custody laws in South Africa. Beyond the courtroom, Thandeka is a mentor for aspiring young attorneys and frequently speaks at conferences on social justice and family law reform.</p>
+        </div>
+    </section>
+
+    <!-- Community  -->
+    <section class="reviews">
+        <h3>Upcoming Community Events</h3>
+        <p>The firm conducts free monthly legal workshops in Khayelitsha, providing insights into basic rights and 
+            legal remedies. They also partner with NGOs to offer pro bono services to underserved communities.</p>
+        <a href="#">Explore Events</a>
+    </section>
+
+</main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ubuntu Legal Practise. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
