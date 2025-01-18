@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Ubuntu Legal Practise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #ffffff;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+          
+            
+        }
+
+        .section {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            margin: 20px 0;
+            max-width: 1200px;
+            margin: 20px auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            color: #666;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .grid img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .numbers {
+            text-align: center;
+        }
+
+        .numbers .grid div {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+   footer a {
+            color: #ccc2c7;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+            <h1>Ubuntu Legal Practise</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#" class="cta">Blog</a>
+                <a href="#">Contact</a>
+                <a href="#">Features</a>
+                <a href="#">More</a>
+            </nav>
+        </header>
+
+<section class="hero">
+    <h2>About Us</h2>
+    <p>Ubuntu Legal Partners, located in the heart of Cape Town, Western Cape, South Africa, embodies the spirit of justice and community through its guiding principle, Ubuntu. With the tagline "Justice for All, Rooted in Ubuntu," the firm is dedicated to delivering compassionate and accessible legal services while promoting fairness and equity across the region. The Cape Town setting, rich in culture and diversity, serves as the perfect backdrop for a firm committed to uplifting and empowering its community.</p>
+    <img src="Images About Us/team pic.webp" alt="Team Photo"width="500px"; height="500">
+</section>
+
+<section class="section">
+    <div class="grid">
+        <div>
+            <img src="Images About Us/paa-vision-mission-1.webp" alt="Mission"width="500px"; height="500">
+            <h3>Our Mission</h3>
+            <p>At Ubuntu Legal Partners, we strive to uphold justice and fairness, guided by the principles of Ubuntu –
+            humanity and compassion in all that we do.</p>
+        </div>
+        <div>
+            <img src="Images About Us/Old-South-Africa-Map-700x700.png" alt="Our Story"width="500px"; height="300">
+            <h3>Our Story</h3>
+            <p>In 2006, HubSpot was founded to create products that help businesses grow better through inbound marketing. Today, our platform powers scaling organizations worldwide.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section numbers">
+    <section class="section">
+        <h2>Meet Our Attorneys</h2>
+        <div class="grid">
+            <div>
+                <img src="Images About Us/medium-shot-woman-working-as-lawyer_23-2151202449.avif" alt="Lucia Garcia" width="500px"; height="300">
+                <h3>Thandeka Mokoena</h3>
+                <p>Thandeka Mokoena is the visionary behind Ubuntu Legal Partners. With an illustrious career spanning 18 years, Thandeka has become a trusted authority in family and human rights law. After earning her LLB from the University of Cape Town, she dedicated her early career to advocating for vulnerable communities, focusing on gender equality and children's rights.</p>
+            </div>
+            <div>
+                <img src="Images About Us/Sphiso Dlamini.png" alt="Adam Barnes">
+                <h3>Sipho Dlamini</h3>
+                <p>Sipho Dlamini, a Corporate Law Expert at Ubuntu Legal Partners, has over 12 years of experience advising businesses on complex legal matters. He holds an LLM in Corporate Governance from Stellenbosch University and is a certified arbitrator.</p>
+            </div>
+            <div>
+                <img src="Images About Us/Ayesha Khan.png" alt="Ava Williams">
+                <h3>Ayesha Khan </h3>
+                <p>Ayesha Khan is an accomplished attorney with a decade of expertise in property and real estate law. After graduating with distinction from the University of Pretoria, Ayesha worked with some of South Africa’s top real estate developers, handling high-profile cases on property transfers and land disputes.</p>
+            </div>
+            <div>
+                <img src="Images About Us/Johan.jpg" alt="Noah Bryan">
+                <h3>Johan van der Merwe</h3>
+                <p>Johan van der Merwe brings 15 years of expertise in labour and employment law to Ubuntu Legal Partners. A graduate of the University of Stellenbosch, Johan is renowned for representing clients in high-stakes unfair dismissal and workplace discrimination cases.</p>
+            </div>
+        </div>
+    </section>
+        </div>
+    </div>
+</section>
+
+<footer>
+        <p>&copy; 2024 Ubuntu Legal Practise. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
+</footer>
+
+</body>
+</html>
