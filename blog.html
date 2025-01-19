@@ -30,11 +30,24 @@
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
-            <a href="features.html">Features</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+            <navbars>
+                <div class="dropdown">
+                  <a href="javascript:void(0);" onclick="toggleDropdown()">Highlights</a>
+                  <div class="dropdown-content" id="dropdown">
+                      <a href="features.html">Features</a>
+                      <a href="Additional features.html">Additional Features</a>
+                  </div>
+                </div>  
+                </navbars>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <script>
+              function toggleDropdown() {
+                  var dropdown = document.getElementById("dropdown");
+                  dropdown.classList.toggle("show");
+              }
+          </script>
     </div>
     <hr class="gold-line">
 

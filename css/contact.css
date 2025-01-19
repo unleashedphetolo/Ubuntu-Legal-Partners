@@ -1,0 +1,248 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF9F6; /* Warm White mainly for backgrounds */
+    color: #333333; /* Dark Charcoal for body texts */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.branding {
+    text-align: left;
+}
+
+.ubuntu-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30.2px;
+    color: #003366; /* Color to be changed according to what everyone usedd */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.legal-partners-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24.2px;
+    font-weight: 300;
+    color: #003366; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; 
+    text-transform: uppercase;
+    color: #A28E2D; 
+    transition: color 0.3s ease;
+}
+
+.nav-active {
+    color: #676E71; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline; 
+}
+
+.header-divider {
+    border: 0;
+    border-top: 1px solid #A28E2D; 
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.practice-areas {
+    background-color: #ECECEC; 
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.practice-areas-frame {
+    background-color: #ECECEC; 
+    width: 498px;
+    height: 78px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; 
+}
+
+.practice-areas-frame h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800; 
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #A28E2D; 
+    margin: 0;
+}
+
+.contact-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #FAF9F6;
+}
+
+.contact-intro h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #8e830f; 
+    margin-bottom: 1rem;
+}
+
+.contact-intro p {
+    font-size: 16px;
+    color: #676E71; 
+    margin-bottom: 2rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    text-align: left;
+}
+
+.contact-form {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #333333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ECECEC;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.contact-form .btn-submit {
+    background-color: #A28E2D; 
+    color: #FFFFFF;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-submit:hover {
+    background-color: #8F7726; 
+}
+
+.contact-details {
+    padding: 2rem;
+    font-size: 14px;
+    color: #333333;
+}
+
+.contact-details h3 {
+    font-size: 18px;
+    color: #A28E2D;
+    margin-bottom: 1rem;
+}
+
+.map-section {
+    margin: 2rem 0;
+}
+
+.map-section h3 {
+    font-size: 18px;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.service-card {
+    background-color: #FFFFFF; 
+    border: 1px solid #ECECEC; 
+    border-radius: 8px; 
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: left;
+    color: #333333; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.service-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.service-card h3 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #A28E2D; 
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-card ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #A28E2D; 
+    color: #FAF9F6; 
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #FAF9F6; 
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
