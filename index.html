@@ -6,6 +6,7 @@
     <title>Ubuntu Legal Partners</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -23,11 +24,24 @@
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
-            <a href="features.html">Features</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+            <navbars>
+                <div class="dropdown">
+                  <a href="javascript:void(0);" onclick="toggleDropdown()">Highlights</a>
+                  <div class="dropdown-content" id="dropdown">
+                      <a href="features.html">Features</a>
+                      <a href="Additional features.html">Additional Features</a>
+                  </div>
+                </div>  
+                </navbars>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <script>
+              function toggleDropdown() {
+                  var dropdown = document.getElementById("dropdown");
+                  dropdown.classList.toggle("show");
+              }
+          </script>
     </div>
     <hr class="gold-line">
     <div class="hero" id="home">
@@ -56,6 +70,72 @@
             </ul>
         </section>
     </div>
+    <section class="testimonials">
+        <h2>Testimonials from Satisfied Clients</h2>
+        <div class="testimonial">
+            <p>"The team at this law firm went above and beyond to help me with my case. Their expertise and dedication were evident throughout the entire process."</p>
+            <h4>- Jane Doe</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Excellent service and professional advice. I highly recommend them for any legal needs."</p>
+            <h4>- John Smith</h4>
+        </div>
+        <div class="testimonial">
+            <p>"They handled my case with utmost care and attention. I felt confident and well-represented at every step."</p>
+            <h4>- Emily Johnson</h4>
+        </div>
+    </section>
+    
+    <main>
+        <section class="practice-areas">
+            <div class="practice-areas-frame">
+                <h2>PRACTICE AREAS</h2>
+            </div>
+            <div class="service-grid">
+                <div id="FamilyLaw" class="service-card" style="background-image: url('png-2.png');">
+                    
+                    <h3>Family Law</h3>
+                    <ul>
+                        <li>Divorce and Maintenance Disputes</li>
+                        <li>Child Custody and Guardianship</li>
+                        <li>Customary Marriage Legalities</li>
+                    </ul>
+                </div>
+                <div id="CommercialLaw" class="service-card" style="background-image: url('png-4.png');">
+                    <h3>Corporate & Commercial</h3>
+                    <ul>
+                        <li>Company Registration and Compliance</li>
+                        <li>Contract Negotiations</li>
+                        <li>Mergers and Acquisitions</li>
+                    </ul>
+                </div>
+                <div id="EmploymentLaw" class="service-card" style="background-image: url('png-6.png');">
+                    <h3>Labour and Employment</h3>
+                    <ul>
+                        <li>Unfair Dismissals</li>
+                        <li>Workplace Discrimination</li>
+                        <li>Union Disputes</li>
+                    </ul>
+                </div>
+                <div id="PropertyLaw" class="service-card" style="background-image: url('png-3.png');">
+                    <h3>Property</h3>
+                    <ul>
+                        <li>Property Transfers</li>
+                        <li>Lease Agreements</li>
+                        <li>Land Disputes</li>
+                    </ul>
+                </div>
+                <div id="PublicInterestLaw" class="service-card" style="background-image: url('png-5.png');">
+                    <h3>Human Rights & Public Interest</h3>
+                    <ul>
+                        <li>Advocacy for Marginalised Communities</li>
+                        <li>Constitutional Law Cases</li>
+                        <li>Pro Bono Legal Assistance</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <section class="heroes">
         <h2>About Us</h2>
@@ -107,7 +187,60 @@
         </section>
             </div>
         </div>
-    </section>    
+    </section>   
+    
+    <body>
+        <main>
+            <section class="contact-section">
+                <div class="contact-intro">
+                    <h2>Contact Us</h2>
+                    <p>We’re here to help. Reach out to us via the form below or use the contact details provided.</p>
+                </div>
+    
+                <!-- Online contact form as per documents requirements -->
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Enter your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Submit</button>
+                        </form>
+                    </div>
+    
+                    <!-- No specific details were given so I made up everything -->
+                    <div class="contact-details">
+                        <h3>Contact Details</h3>
+                        <p><strong>Email:</strong> info@ubuntulegalpartners.com</p>
+                        <p><strong>Phone:</strong> +27 123 456 789</p>
+                        <p><strong>Address:</strong> 123 Ubuntu Street, Johannesburg, South Africa</p>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Pin address needed to sort this -->
+            <section class="map-section">
+                <h3>Find Us</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.8112383999!2d18.420699315323087!3d-33.92584478063692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc676ce7e60cd7%3A0x449ee2e77e521e99!2sCape%20Town%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1614952321596!5m2!1sen!2sus"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </section>
+        </main>
+
     <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2025 Ubuntu Legal Partners. All rights reserved.</p>
