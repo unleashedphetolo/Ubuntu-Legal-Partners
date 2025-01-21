@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Legal Partners</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        #contactNumbers {
+          display: none;
+          margin-top: 10px;
+          font-size: 16px;
+          color: #333;
+        }
+      </style>
+</head>
+<body>
+    <div class="home-div">
+        <header>
+            <a href="index.html">
+                <img src="images/logo2.png" alt="Ubuntu Legal Logo">
+            </a>
+            <h1>Ubuntu Legal Partners</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <navbars>
+                <div class="dropdown">
+                  <a href="javascript:void(0);" onclick="toggleDropdown()">Highlights</a>
+                  <div class="dropdown-content" id="dropdown">
+                      <a href="features.html">Features</a>
+                      <a href="Additional features.html">Additional Features</a>
+                  </div>
+                </div>  
+                </navbars>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <script>
+              function toggleDropdown() {
+                  var dropdown = document.getElementById("dropdown");
+                  dropdown.classList.toggle("show");
+              }
+          </script>
+    </div>
+    <hr class="gold-line">
+
+    <!-- Hero Section -->
+    <section class="heros">
+        <div class="heros-text">
+            <h2>What Ubuntu Means in the Legal Context</h2>
+            <p> Explore how the Ubuntu philosophy shapes our approach to justice, fairness, and community-driven legal representation.</p>
+            <body>
+                <button id="callUsButton">Call Us Today</button>
+                <div id="contactNumbers">
+                  <p>📞 +1-555-123-4567</p>
+                  <p>📞 +1-555-987-6543</p>
+                </div>
+              
+                <script>
+                  document.getElementById('callUsButton').addEventListener('click', function() {
+                    const contactNumbers = document.getElementById('contactNumbers');
+                    contactNumbers.style.display = contactNumbers.style.display === 'none' ? 'block' : 'none';
+                  });
+                </script>
+        </div>
+        <img src="Images Blog/ubuntu.jfif" alt="Attorney Angela Lumzy-Jones"width="200px"; height="250px">
+    </section>
+
+    <!-- Latest News -->
+    <section class="latest">
+        <h3>Our Latest</h3>
+        <div class="area">
+            <img src="Images Blog/blog 4.webp" alt="Car Accident"width="250px"; height="200px">
+            <h4>Navigating Family Disputes with Ubuntu Values</h4>
+            <p>
+                Insights on resolving family conflicts with compassion, respect, and understanding.</p>
+        </div>
+        <div class="area">
+            <img src="Images Blog/blog 3.jpg" alt="Truck Accident"width="250px"; height="200px">
+            <h4>Civil Rights and Ubuntu: A Shared Mission</h4>
+            <p>Discussing the intersection of Ubuntu philosophy and civil rights advocacy in the modern legal landscape.</p>
+        </div>
+        <div class="area">
+            <img src="Images Blog/blog 6.jpg" alt="Company Vehicle"width="250px"; height="200px">
+            <h4>Restoring Dignity Through Legal Advocacy</h4>
+            <p>Stories of how Ubuntu Legal Practice has helped clients regain their dignity and achieve justice.</p>
+        </div>
+        <div class="area">
+            <img src="Images Blog/blog 7.jpg" alt="Slip and Fall" width="250px"; height="200px">
+            <h4>The Importance of Community in Personal Injury Cases</h4>
+            <p>Highlighting how community and interconnectedness play a crucial role in achieving equitable outcomes for clients.</p>
+        </div>
+    </section>
+
+    <!-- Attorney Section -->
+    <section class="attorney-section">
+        <img src="Images About Us/medium-shot-woman-working-as-lawyer_23-2151202449.avif" alt="Award Winning Attorney"width="60px"; height="200px">
+        <div class="content">
+            <h3>Award Winning Attorney</h3>
+            <p>Thandeka Mokoena is the visionary behind Ubuntu Legal Partners. With an illustrious career spanning 18 years, Thandeka has become a trusted authority in family and human rights law. After earning her LLB from the University of Cape Town, she dedicated her early career to advocating for vulnerable communities, focusing on gender equality and children's rights.
+                Her commitment to justice was cemented when she led groundbreaking cases addressing domestic abuse and child custody laws in South Africa. Beyond the courtroom, Thandeka is a mentor for aspiring young attorneys and frequently speaks at conferences on social justice and family law reform.</p>
+        </div>
+    </section>
+
+    <!-- Community  -->
+    <section class="reviews">
+        <h3>Upcoming Community Events</h3>
+        <p>The firm conducts free monthly legal workshops in Khayelitsha, providing insights into basic rights and 
+            legal remedies. They also partner with NGOs to offer pro bono services to underserved communities.</p>
+        <a href="#">Explore Events</a>
+    </section>
+
+</main>
+    
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Ubuntu Legal Partners. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="policy.html">Privacy Policy</a></li>
+                <li><a href="#terms-of-service">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
