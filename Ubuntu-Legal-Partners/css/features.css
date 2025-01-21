@@ -160,7 +160,7 @@ main {
 
 
 .bilingual-content{
-font-size: medium;
+font-size: small;
 font-weight: 100;
 width: 60%;
 }
@@ -262,3 +262,245 @@ color: #555;
 .social-media a:focus {
   outline: none;
   transform: scale(1.1);
+}
+
+  @media only screen and (max-width: 480px) {
+    body{
+      font-size: 10px;
+    }
+
+    header img {
+      height: 50px;
+      width: 60px;
+      border-radius: 20px;
+      margin-bottom: 6px;
+  }
+  
+  .gold-line {
+    border: none;
+    height: 4px;
+    background-color: #8e830f;
+    margin-top: -6px;
+    margin-bottom: 15px;
+    width: 80%;
+  }
+  
+  
+  
+  .navbars {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .dropdown {
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+  }
+  .dropdown-content {
+    justify-items: center;
+    width: 120px;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    margin-top: 2px;
+    border-radius: 21px;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  .show {
+    display: block;
+  }
+  
+  
+  
+  body {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    color: #003319;
+    font-size: 14px;
+  }
+  h1{
+    font-family:Lato;
+    /* font-weight: 100; */
+  }
+  h2{
+    font-family: Lato;
+    font-size: 1.2rem;
+  }
+  
+  /* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+  } */
+  
+  .header-container h1 {
+    font-size: 1.2rem;
+   color: #d4af37;
+   text-align: center;
+  }
+  hr{
+    border-color: #8e830f;
+    border-width: 1px;
+    border-style: solid;
+  }
+  main {
+    padding: 15px;
+  }
+  
+  /* .spotlight {
+    text-align: center;
+    margin-bottom: 40px;
+  } */
+  
+  .success-stories {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+  
+  .story-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 90%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #d8108b;
+}
+  
+.story-card h3 {
+  font-size: 1.2rem;
+  color: #8e830f;
+  margin-bottom: 10px;
+}
+  
+.story-card p {
+  font-size: 1rem;
+  color: #555;
+}
+  
+.case-details {
+  font-size: 0.8rem;
+  color: #888;
+}
+  
+.legal {
+  text-align: center;
+  margin-bottom: 30px;
+}
+  
+  
+  
+.bilingual-content {
+  font-size: 14px;
+  font-weight: 100;
+  width: 80%;
+  margin: 0 auto;
+}
+  
+  
+  .bilingual-content h3{
+  color: #555;
+  
+  }
+  
+  .live-chat-container {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.live-chat-header {
+  background-color: #333;
+  color: #8e830f;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+  
+.footer {
+  background-color: #8e830f;
+  color: #ecf0f1;
+  padding: 15px;
+  text-align: center;
+}
+  
+.footer-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+  
+.footer p {
+  margin: 0;
+  font-size: 16px;
+}
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  display: block;
+}
+  
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+  
+.footer-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+  
+  .footer-links a:hover {
+    color: #000000;
+  }
+  
+  .footer-links a:focus {
+    outline: none;
+    color: #000000;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+  
+.social-media a {
+  color: #ecf0f1;
+  font-size: 24px;
+  transition: color 0.3s, transform 0.3s;
+}
+  
+  .social-media a:hover {
+    color: #000000;
+    transform: scale(1.1);
+  }
+  
+  .social-media a:focus {
+    outline: none;
+    transform: scale(1.1);
+}
+  }
