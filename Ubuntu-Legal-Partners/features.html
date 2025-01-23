@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Legal Partners</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .legal h2 {
+            font-family: Lato;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #8e830f;
+            background-image: url('images/Lawfirm2.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-position: center; 
+            text-align: center; 
+            padding: 40px 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="home-div">
+        <header>
+            <a href="index.html">
+                <img src="images/logo2.png" alt="Ubuntu Legal Logo">
+            </a>
+            <h1>Ubuntu Legal Partners</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <div class="dropdown">
+                <a href="javascript:void(0);" onclick="toggleDropdown()">Highlights</a>
+                <div class="dropdown-content" id="dropdown">
+                    <a href="features.html">Features</a>
+                    <a href="Additional features.html">Additional Features</a>
+                </div>
+            </div>  
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <hr class="gold-line">
+
+    <main>
+        <section class="legal">
+            <hr>
+            <h2>YOUR TRUSTED LEGAL FIRM</h2>
+            <section class="bilingual-content">
+                <hr>
+                <h3> 
+                    English<br>
+                    Welcome to Ubuntu Legal Partners, a dynamic and innovative law firm dedicated to providing expert legal services to individuals, businesses, and organizations.
+                    Our team of experienced attorneys is committed to delivering personalized and effective solutions to meet your unique legal needs.
+                    <br><br>
+                    isiXhosa<br>
+                    Siyanamkela kwiUbuntu Legal Partners, inkampani yamalungelo zomthetho ethintekileyo neyenza izinto ezintsha, ezinikezela ngezikhumbuzo zomthetho kubantu, amashishini, kunye nezinye iimeko.
+                    Iqela lethu lezomthetho linikezela ngenkonzo enesikhumbuzo, lizele amandla, ukufikelela kwiimeko zakho zomthetho ngokwemvelo kwaye ngokupheleleyo.
+                </h3>
+            </section>
+
+            <div class="live-chat-container">
+                <div class="live-chat-header">
+                    <h2>Live Chat</h2>
+                </div>
+                <div class="live-chat-body">
+                    <p id="live-chat-status"></p>
+                </div>
+            </div>
+        </section>
+       
+<h1 style="color: #8e830f;">Client Portal</h1>
+
+        <form id="uploadForm" enctype="multipart/form-data" action="upload.php" method="post">
+            <div style="margin-bottom: 20px; display: flex; flex-direction: column; align-items: flex-start;">
+                <label for="fullName" style="width: 250px; font-weight: bold; text-align: left;">
+                    Full Name:
+                </label>
+                <input type="text" name="fullName" id="fullName" required style="margin-top: 5px; width: 250px;">
+            </div>
+        
+            <div style="margin-bottom: 20px; display: flex; flex-direction: column; align-items: flex-start;">
+                <label for="email" style="width: 250px; font-weight: bold; text-align: left;">
+                    Email:
+                </label>
+                <input type="email" name="email" id="email" required style="margin-top: 5px; width: 250px;">
+            </div>
+        
+            <div style="margin-bottom: 20px; display: flex; flex-direction: column; align-items: flex-start;">
+                <label for="contact" style="width: 250px; font-weight: bold; text-align: left;">
+                    Contact Number:
+                </label>
+                <input type="tel" name="contact" id="contact" required style="margin-top: 5px; width: 250px;">
+            </div>
+        
+            <div style="margin-bottom: 20px; display: flex; flex-direction: column; align-items: flex-start;">
+                <label for="identityInput" style="width: 250px; font-weight: bold; text-align: left;">
+                    Upload Proof of Identity:
+                </label>
+                <input type="file" name="identityFile" id="identityInput" accept=".pdf,.doc,.docx,image/*" style="margin-top: 5px;">
+                <div id="identityPreview" style="margin-top: 10px;"></div>
+            </div>
+        
+            <div style="margin-bottom: 20px; display: flex; flex-direction: column; align-items: flex-start;">
+                <label for="addressInput" style="width: 250px; font-weight: bold; text-align: left;">
+                    Upload Proof of Residential Address:
+                </label>
+                <input type="file" name="addressFile" id="addressInput" accept=".pdf,.doc,.docx,image/*" style="margin-top: 5px;">
+                <div id="addressPreview" style="margin-top: 10px;"></div>
+            </div>
+        
+            <div style="margin-bottom: 20px; display: flex; flex-direction: column; align-items: flex-start;">
+                <label for="appointmentInput" style="width: 250px; font-weight: bold; text-align: left;">
+                    Upload Letter of Appointment:
+                </label>
+                <input type="file" name="appointmentFile" id="appointmentInput" accept=".pdf,.doc,.docx,image/*" style="margin-top: 5px;">
+                <div id="appointmentPreview" style="margin-top: 10px;"></div>
+            </div>
+        
+            <button type="submit" style="padding: 10px 20px; background-color: #8e830f; color: white; border: none; cursor: pointer; margin-bottom: 40px;">Submit</button>
+        </form>
+        
+        <script>
+            function handleFileSelect(event, previewId) {
+                var file = event.target.files[0];
+                var preview = document.getElementById(previewId);
+                preview.innerHTML = '';
+        
+                if (file) {
+                    var fileContainer = document.createElement('div');
+                    fileContainer.style.marginBottom = '20px';
+        
+                    var fileIcon = document.createElement('div');
+                    var fileInfo = document.createElement('p');
+        
+                    if (file.type.match('image.*')) {
+                        var img = document.createElement('img');
+                        img.src = URL.createObjectURL(file);
+                        img.style.height = '100px';
+                        img.style.display = 'block';
+                        img.style.marginBottom = '10px';
+                        fileContainer.appendChild(img);
+                    } else {
+                        fileIcon.textContent = '📄';
+                        fileIcon.style.fontSize = '50px';
+                        fileIcon.style.display = 'block';
+                        fileIcon.style.marginBottom = '10px';
+                        fileContainer.appendChild(fileIcon);
+                    }
+        
+                    fileInfo.textContent = `File Name: ${file.name}, Type: ${file.type}, Size: ${file.size} bytes`;
+                    fileInfo.style.fontSize = '14px';
+                    fileInfo.style.marginTop = '0';
+                    fileContainer.appendChild(fileInfo);
+                    preview.appendChild(fileContainer);
+        
+                    var successMessage = document.createElement('p');
+                    successMessage.textContent = 'File selected successfully!';
+                    successMessage.style.color = 'green';
+                    successMessage.style.fontWeight = 'bold';
+                    successMessage.style.marginTop = '10px';
+                    preview.appendChild(successMessage);
+                }
+            }
+        
+            document.getElementById('identityInput').addEventListener('change', function(event) {
+                handleFileSelect(event, 'identityPreview');
+            });
+            document.getElementById('addressInput').addEventListener('change', function(event) {
+                handleFileSelect(event, 'addressPreview');
+            });
+            document.getElementById('appointmentInput').addEventListener('change', function(event) {
+                handleFileSelect(event, 'appointmentPreview');
+            });
+        </script>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Ubuntu Legal Partners. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="policy.html">Privacy Policy</a></li>
+                <li><a href="#terms-of-service">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

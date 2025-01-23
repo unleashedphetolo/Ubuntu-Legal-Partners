@@ -80,12 +80,14 @@ header nav ul li a {
 }
 
 .section h2 {
-    color: #2c3e50;
+   color: #8e830f; 
+    ;
     margin-bottom: 20px;
 }
 
 .section p {
     color: #666;
+    padding-right: 60px;
 }
 
 .grid {
@@ -106,4 +108,41 @@ header nav ul li a {
 
 .numbers .grid div {
     text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .section {
+        padding: 40px 20px;
+        background-color: #ffffff;
+        margin: 20px 0;
+        width: 50%;
+        margin: 20px auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        align-items: center;
+    }
+
+    .heroes p {
+        color: #000;
+        font-weight: lighter;
+        text-align: left;
+        font-size: smaller;
+        padding: 12px 20px;
+    }
+    .heroes img {
+        width: 80%;
+        height: auto;
+      }
+      .grid img {
+        width: 80%;
+        border-radius: 5px;
+        height: 200px;
+
+          .section p {
+            color: #010101;
+            font-size: 15px;
+            text-align: center;
+            justify-content: center;
+            padding-right: 60px;
+          }
 }
